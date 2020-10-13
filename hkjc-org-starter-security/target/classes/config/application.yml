@@ -1,0 +1,22 @@
+server:
+    port: 9999
+    # actuator
+management:
+    server:
+        port: 8888
+        ssl:
+            enabled: false # optionally - just for information
+    endpoints:      
+        enabled-by-default: true # optionally - just for information
+        web:
+            exposure:
+                exclude: # optionally - just for information
+                include: auditevents, beans, caches, conditions, configprops, env, flyway, health, heapdump, httptrace,  info, logfile, loggers, metrics, mapping, promethus, sessions, shutdown, threaddump # optionally - just for information    
+    endpoint:       
+        health:
+            show-components: always   # optionally - just for information 
+        shutdown:
+            enabled: true  # optionally - just for information
+    trace:
+        http:
+            include: REQUEST_HEADERS, RESPONSE_HEADERS, COOKIE_HEADERS

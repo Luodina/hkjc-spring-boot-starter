@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.hkjc.developer.security.SecurityConfig,\
+org.hkjc.developer.security.WebSecurityConfig

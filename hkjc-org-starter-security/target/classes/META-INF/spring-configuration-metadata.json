@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "name": "hkjc-org.web.security",
+      "type": "org.hkjc.developer.security.WebSecurityConfigurer",
+      "sourceType": "org.hkjc.developer.security.WebSecurityConfigurer"
+    }
+  ],
+  "properties": [
+    {
+      "name": "hkjc-org.web.security.admin-endpoints",
+      "type": "java.lang.String[]",
+      "description": "Endpoints that require the ADMIN role to access",
+      "sourceType": "org.hkjc.developer.security.WebSecurityConfigurer",
+      "defaultValue": []
+    },
+    {
+      "name": "hkjc-org.web.security.unsecured-endpoints",
+      "type": "java.lang.String[]",
+      "description": "Endpoints that have no security requirements. Default value: \/public**",
+      "sourceType": "org.hkjc.developer.security.WebSecurityConfigurer",
+      "defaultValue": [
+        "\/public**"
+      ]
+    },
+    {
+      "name": "hkjc-org.web.security.user-endpoints",
+      "type": "java.lang.String[]",
+      "description": "Endpoints that require the USER role to access",
+      "sourceType": "org.hkjc.developer.security.WebSecurityConfigurer",
+      "defaultValue": []
+    }
+  ],
+  "hints": []
+}
